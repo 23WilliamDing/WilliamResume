@@ -1,0 +1,32 @@
+<div>
+     <mat-toolbar>
+          <h1>Welcome!</h1>
+
+
+
+          <div id="toolbar-buttons-group">
+
+               {{today | date:'yyyy-MM-dd HH:mm:ss'}}
+               
+               <button mat-button color="primary">
+                    <mat-icon>search</mat-icon>
+               </button>
+
+               <button mat-button color="primary">
+                    <i class="mdui-icon material-icons">&#xe3a9;</i>
+               </button>
+
+               <button mat-button color="primary">
+                    <i class="mdui-icon material-icons">&#xe894;</i>
+                    <!--
+    <mat-form-field id="toolbar-button-part">
+    <mat-select [(value)]="selected">
+      <mat-option value="English">ENG</mat-option>
+      <mat-option value="Chinese">CN</mat-option>
+    </mat-select>
+    </mat-form-field>-->
+               </button>
+
+          </div>
+     </mat-toolbar>
+</div>

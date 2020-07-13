@@ -1,0 +1,54 @@
+<mat-card class="avatar-card" id="avatar-card" (click)='onClickAvatarCard()'>
+
+    <mat-card-header>
+        <!--<div id="avatar-profile">-->
+        <img mat-card-avatar src="assets/profile/Trump.jpg" alt="profile">
+        <mat-card-title>William</mat-card-title>
+        <mat-card-subtitle>.NET Software Engineer</mat-card-subtitle>
+
+    </mat-card-header>
+    <mat-divider></mat-divider>
+
+
+    <mat-card-content id="profile-name-part">
+        <div>
+            <h1>William Ding</h1>
+        </div>
+        <div>
+            <!--<button mat-button color="primary">Motto: Patience is the key to everything.</button><br>-->
+            <P>Motto: Patience is the key to everything.</P><br>
+        </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-button><i class="mdui-icon material-icons">&#xe813;</i>LIKE</button>
+        <button mat-button><i class="mdui-icon material-icons">&#xe80d;</i>SHARE</button>
+    </mat-card-actions>
+
+</mat-card>
+
+<br>
+<mat-card class="avatar-card" id="information-card" (click)='onClickInformationCard()'>
+    <p id="information-age"><i class="mdui-icon material-icons">&#xe7e9;</i>Age:23</p>
+    <p id="information-age">
+        <mat-icon>tag_faces</mat-icon>Mood:Sunny
+    </p>
+    <p id="information-email"><i class="mdui-icon material-icons">&#xe0be;</i>Email:327549390@qq.com</p>
+</mat-card>
+
+<br>
+<mat-card class="avatar-card" id="buttons-card">
+    <mat-card-actions>
+        <button mat-button color="primary" (click)='onExperience()'><i class="mdui-icon material-icons">&#xe85d;</i>
+            Experience<i class="mdui-icon material-icons" *ngIf="onExperienceSign"> &#xe038;</i></button><br>
+        <button mat-button color="primary" (click)='onEducation()'><i class="mdui-icon material-icons">&#xe80c;</i>
+            Education<i class="mdui-icon material-icons" *ngIf="onEducationSign"> &#xe038;</i></button><br>
+        <button mat-button color="primary" (click)='onTeachnicalSkills()'><i
+                class="mdui-icon material-icons">&#xe8f9;</i> Teachnical
+            Skills<i class="mdui-icon material-icons" *ngIf="onTeachnicalSkillsSign"> &#xe038;</i></button><br>
+        <button mat-button color="primary" (click)='onSelfIntroduction()'><i
+                class="mdui-icon material-icons">&#xe7fd;</i> Self-introduction<i class="mdui-icon material-icons"
+                *ngIf="onSelfIntroductionSign"> &#xe038;</i></button><br>
+    </mat-card-actions>
+</mat-card>
+
